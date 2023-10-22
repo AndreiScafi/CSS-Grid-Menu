@@ -26,10 +26,12 @@ html {
     justify-content: space-evenly;
     align-items: center;
     opacity: 1;
+    visibility: visible;
 }
 
 .change .lines {
     opacity: 0;
+    visibility: hidden;
 }
 
 .line {
@@ -45,10 +47,12 @@ html {
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 0;
+    visibility: hidden;
 }
 
 .change .x-btn {
     opacity: 1;
+    visibility: visible;
 }
 
 .x-line {
@@ -76,10 +80,13 @@ html {
     justify-content: center;
     align-items: center;
     opacity: 1;
+    visibility: visible;
+    transition: all .5s;
 }
 
 .change .header {
     opacity: 0;
+    visibility: hidden;
 }
 
 .banner h1 {
@@ -119,10 +126,13 @@ html {
     grid-template-columns: 2rem 1fr 2rem;
     grid-template-rows: 10rem 1fr 2rem;
     opacity: 0;
+    visibility: hidden;
 }
 
 .change .navigation {
     opacity: 1;
+    visibility: visible;
+    transition: all .5s;
 }
 
 .nav-menu {
@@ -136,6 +146,7 @@ html {
 
 .nav-menu-item {
     list-style: none;
+    overflow: hidden;
 }
 
 .nav-menu-item:nth-child(1) {
@@ -207,4 +218,10 @@ html {
     justify-content: center;
     align-items: center;
     height: 100%;
+    transform: translateX(-105%);
+}
+
+.change .nav-menu-link {
+    transition: transform .7s 1s;
+    transform: translateX(0);
 }
